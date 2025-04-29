@@ -1,0 +1,399 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Timecard Report</title>
+    
+    <style>
+      table { border-collapse: collapse; }
+      th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding-left: 10px; 
+                padding-right: 10px; 
+      }
+      th { background-color: #f2f2f2; }
+    </style>
+    
+    </head>
+    <body>
+    <h1>Timecard Report</h1>
+    <h3>Work Period: 2025-04-06 - 2025-04-18</h3>
+    <table border="1" cellpadding="5">
+      <tr><th>Work Schedule</th><th>Emp Status</th><th>Location</th><th>Employee Name</th><th>Manager</th><th>Regular</th><th>OT</th><th>Holiday</th><th>Sick (CA)</th><th>Total PTO</th><th>Total Hrs</th><th>Approved?</th></tr>
+      <tr><td>Part-time 20 hours</td><td>Internship</td><td>MD (Remote)</td><td>&quot;Agrawal, Swastik&quot;</td><td>Sana W.</td><td>36.67</td><td>0</td><td>0</td><td>0</td><td>0</td><td>36.67</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Basu, Samprikta&quot;</td><td>Sana W.</td><td>35.68</td><td>0</td><td>0</td><td>0</td><td>0</td><td>35.68</td><td>Yes</td></tr><tr><td>Full-time 40 hours</td><td>Internship</td><td>MI (Remote)</td><td>&quot;Dekhane, Aishwarya&quot;</td><td>Sana W.</td><td>73.97</td><td>0</td><td>0</td><td>0</td><td>0</td><td>73.97</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Godse, Tanay&quot;</td><td>Sana W.</td><td>40.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>40.25</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>MD (Remote)</td><td>&quot;Hundia, Nishkal&quot;</td><td>Sana W.</td><td>39.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>39.0</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Joshi, Parth&quot;</td><td>Sana W.</td><td>40.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>40.0</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Mahagaonkar, Chinmay Nilesh&quot;</td><td>Sana W.</td><td>43.82</td><td>0.43</td><td>0</td><td>0</td><td>0</td><td>44.25</td><td>Yes</td></tr><tr><td>Full-time 40 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Nguyen, Justin&quot;</td><td>Sana W.</td><td>71.67</td><td>0</td><td>0</td><td>0</td><td>0</td><td>71.67</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Nguyen, Phuc&quot;</td><td>Sana W.</td><td>37.62</td><td>0</td><td>0</td><td>0</td><td>0</td><td>37.62</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Pham, Ryan Nam&quot;</td><td>Sana W.</td><td>39.68</td><td>0</td><td>0</td><td>0</td><td>0</td><td>39.68</td><td>Yes</td></tr><tr><td>Full-time 40 hours</td><td>Internship</td><td>MI (Remote)</td><td>&quot;Pore, Atharva&quot;</td><td>Sana W.</td><td>72.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>72.0</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Radindra, Davel&quot;</td><td>Sana W.</td><td>39.13</td><td>0</td><td>0</td><td>0</td><td>0</td><td>39.13</td><td>Yes</td></tr><tr><td>Full-time 40 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Shah, Jash Hemant&quot;</td><td>Sana W.</td><td>56.0</td><td>0.02</td><td>0</td><td>2.0</td><td>16.0</td><td>56.02</td><td>Yes</td></tr><tr><td>Part-time 20 hours</td><td>Internship</td><td>CA (Remote)</td><td>&quot;Tran, Trung&quot;</td><td>Sana W.</td><td>39.98</td><td>0</td><td>0</td><td>0</td><td>0</td><td>39.98</td><td>Yes</td></tr><tr><td>Full-time 40 hours</td><td>Full-Time</td><td>CA (Remote)</td><td>&quot;Vennavelli, Rajashekar Reddy&quot;</td><td>Sana W.</td><td>71.93</td><td>0</td><td>8.0</td><td>0</td><td>0</td><td>71.93</td><td>Yes</td></tr>
+    </table>
+    <br>
+    <h1>Timecard Details by Employee and Week</h1>
+    <h3>Work Period: 2025-04-06 - 2025-04-18</h3>
+    
+            <h2>Agrawal, Swastik – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>125</td><td>Agrawal, Swastik</td><td>1</td><td>2025-04-07</td><td>3.88</td><td>0.00</td><td>0.00</td><td>3.88</td></tr><tr><td>125</td><td>Agrawal, Swastik</td><td>1</td><td>2025-04-08</td><td>6.10</td><td>0.00</td><td>0.00</td><td>6.10</td></tr><tr><td>125</td><td>Agrawal, Swastik</td><td>1</td><td>2025-04-10</td><td>4.77</td><td>0.00</td><td>0.00</td><td>4.77</td></tr><tr><td>125</td><td>Agrawal, Swastik</td><td>1</td><td>2025-04-11</td><td>5.67</td><td>0.00</td><td>0.00</td><td>5.67</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>20.42</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>20.42</strong></td></tr>
+            </table><br>
+            
+            <h2>Agrawal, Swastik – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>125</td><td>Agrawal, Swastik</td><td>2</td><td>2025-04-14</td><td>1.37</td><td>0.00</td><td>0.00</td><td>1.37</td></tr><tr><td>125</td><td>Agrawal, Swastik</td><td>2</td><td>2025-04-15</td><td>7.35</td><td>0.00</td><td>0.00</td><td>7.35</td></tr><tr><td>125</td><td>Agrawal, Swastik</td><td>2</td><td>2025-04-17</td><td>7.53</td><td>0.00</td><td>0.00</td><td>7.53</td></tr><tr><td>125</td><td>Agrawal, Swastik</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>16.25</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>16.25</strong></td></tr>
+            </table><br>
+            
+        <h2>Agrawal, Swastik – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Agrawal, Swastik</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>36.67</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>36.67</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Basu, Samprikta – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>139</td><td>Basu, Samprikta</td><td>1</td><td>2025-04-07</td><td>3.62</td><td>0.00</td><td>0.00</td><td>3.62</td></tr><tr><td>139</td><td>Basu, Samprikta</td><td>1</td><td>2025-04-08</td><td>2.27</td><td>0.00</td><td>0.00</td><td>2.27</td></tr><tr><td>139</td><td>Basu, Samprikta</td><td>1</td><td>2025-04-09</td><td>4.18</td><td>0.00</td><td>0.00</td><td>4.18</td></tr><tr><td>139</td><td>Basu, Samprikta</td><td>1</td><td>2025-04-10</td><td>0.67</td><td>0.00</td><td>0.00</td><td>0.67</td></tr><tr><td>139</td><td>Basu, Samprikta</td><td>1</td><td>2025-04-11</td><td>7.10</td><td>0.00</td><td>0.00</td><td>7.10</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>17.83</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>17.83</strong></td></tr>
+            </table><br>
+            
+            <h2>Basu, Samprikta – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>139</td><td>Basu, Samprikta</td><td>2</td><td>2025-04-14</td><td>6.87</td><td>0.00</td><td>0.00</td><td>6.87</td></tr><tr><td>139</td><td>Basu, Samprikta</td><td>2</td><td>2025-04-16</td><td>4.83</td><td>0.00</td><td>0.00</td><td>4.83</td></tr><tr><td>139</td><td>Basu, Samprikta</td><td>2</td><td>2025-04-17</td><td>6.15</td><td>0.00</td><td>0.00</td><td>6.15</td></tr><tr><td>139</td><td>Basu, Samprikta</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>17.85</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>17.85</strong></td></tr>
+            </table><br>
+            
+        <h2>Basu, Samprikta – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Basu, Samprikta</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>35.68</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>35.68</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Dekhane, Aishwarya – Week 0</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>127</td><td>Dekhane, Aishwarya</td><td>0</td><td>2025-04-06</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td></tr>
+            </table><br>
+            
+            <h2>Dekhane, Aishwarya – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>127</td><td>Dekhane, Aishwarya</td><td>1</td><td>2025-04-07</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>127</td><td>Dekhane, Aishwarya</td><td>1</td><td>2025-04-08</td><td>8.45</td><td>0.00</td><td>0.00</td><td>8.45</td></tr><tr><td>127</td><td>Dekhane, Aishwarya</td><td>1</td><td>2025-04-09</td><td>8.78</td><td>0.00</td><td>0.00</td><td>8.78</td></tr><tr><td>127</td><td>Dekhane, Aishwarya</td><td>1</td><td>2025-04-10</td><td>6.38</td><td>0.00</td><td>0.00</td><td>6.38</td></tr><tr><td>127</td><td>Dekhane, Aishwarya</td><td>1</td><td>2025-04-11</td><td>8.35</td><td>0.00</td><td>0.00</td><td>8.35</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>39.97</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>39.97</strong></td></tr>
+            </table><br>
+            
+            <h2>Dekhane, Aishwarya – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>127</td><td>Dekhane, Aishwarya</td><td>2</td><td>2025-04-14</td><td>8.25</td><td>0.00</td><td>0.00</td><td>8.25</td></tr><tr><td>127</td><td>Dekhane, Aishwarya</td><td>2</td><td>2025-04-15</td><td>7.75</td><td>0.00</td><td>0.00</td><td>7.75</td></tr><tr><td>127</td><td>Dekhane, Aishwarya</td><td>2</td><td>2025-04-16</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>127</td><td>Dekhane, Aishwarya</td><td>2</td><td>2025-04-17</td><td>10.00</td><td>0.00</td><td>0.00</td><td>10.00</td></tr><tr><td>127</td><td>Dekhane, Aishwarya</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>34.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>34.00</strong></td></tr>
+            </table><br>
+            
+        <h2>Dekhane, Aishwarya – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Dekhane, Aishwarya</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>73.97</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>73.97</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Godse, Tanay – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>102</td><td>Godse, Tanay</td><td>1</td><td>2025-04-08</td><td>5.63</td><td>0.00</td><td>0.00</td><td>5.63</td></tr><tr><td>102</td><td>Godse, Tanay</td><td>1</td><td>2025-04-09</td><td>4.20</td><td>0.00</td><td>0.00</td><td>4.20</td></tr><tr><td>102</td><td>Godse, Tanay</td><td>1</td><td>2025-04-10</td><td>5.18</td><td>0.00</td><td>0.00</td><td>5.18</td></tr><tr><td>102</td><td>Godse, Tanay</td><td>1</td><td>2025-04-11</td><td>5.18</td><td>0.00</td><td>0.00</td><td>5.18</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>20.20</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>20.20</strong></td></tr>
+            </table><br>
+            
+            <h2>Godse, Tanay – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>102</td><td>Godse, Tanay</td><td>2</td><td>2025-04-14</td><td>5.13</td><td>0.00</td><td>0.00</td><td>5.13</td></tr><tr><td>102</td><td>Godse, Tanay</td><td>2</td><td>2025-04-16</td><td>5.43</td><td>0.00</td><td>0.00</td><td>5.43</td></tr><tr><td>102</td><td>Godse, Tanay</td><td>2</td><td>2025-04-17</td><td>5.42</td><td>0.00</td><td>0.00</td><td>5.42</td></tr><tr><td>102</td><td>Godse, Tanay</td><td>2</td><td>2025-04-18</td><td>4.07</td><td>0.00</td><td>0.00</td><td>4.07</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>20.05</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>20.05</strong></td></tr>
+            </table><br>
+            
+        <h2>Godse, Tanay – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Godse, Tanay</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>40.25</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>40.25</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Hundia, Nishkal – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>128</td><td>Hundia, Nishkal</td><td>1</td><td>2025-04-07</td><td>4.03</td><td>0.00</td><td>0.00</td><td>4.03</td></tr><tr><td>128</td><td>Hundia, Nishkal</td><td>1</td><td>2025-04-08</td><td>3.15</td><td>0.00</td><td>0.00</td><td>3.15</td></tr><tr><td>128</td><td>Hundia, Nishkal</td><td>1</td><td>2025-04-10</td><td>7.12</td><td>0.00</td><td>0.00</td><td>7.12</td></tr><tr><td>128</td><td>Hundia, Nishkal</td><td>1</td><td>2025-04-11</td><td>5.47</td><td>0.00</td><td>0.00</td><td>5.47</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>19.77</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>19.77</strong></td></tr>
+            </table><br>
+            
+            <h2>Hundia, Nishkal – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>128</td><td>Hundia, Nishkal</td><td>2</td><td>2025-04-14</td><td>3.65</td><td>0.00</td><td>0.00</td><td>3.65</td></tr><tr><td>128</td><td>Hundia, Nishkal</td><td>2</td><td>2025-04-15</td><td>4.80</td><td>0.00</td><td>0.00</td><td>4.80</td></tr><tr><td>128</td><td>Hundia, Nishkal</td><td>2</td><td>2025-04-16</td><td>6.25</td><td>0.00</td><td>0.00</td><td>6.25</td></tr><tr><td>128</td><td>Hundia, Nishkal</td><td>2</td><td>2025-04-17</td><td>4.53</td><td>0.00</td><td>0.00</td><td>4.53</td></tr><tr><td>128</td><td>Hundia, Nishkal</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>19.23</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>19.23</strong></td></tr>
+            </table><br>
+            
+        <h2>Hundia, Nishkal – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Hundia, Nishkal</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>39.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>39.00</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Joshi, Parth – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>122</td><td>Joshi, Parth</td><td>1</td><td>2025-04-07</td><td>7.00</td><td>0.00</td><td>0.00</td><td>7.00</td></tr><tr><td>122</td><td>Joshi, Parth</td><td>1</td><td>2025-04-08</td><td>7.00</td><td>0.00</td><td>0.00</td><td>7.00</td></tr><tr><td>122</td><td>Joshi, Parth</td><td>1</td><td>2025-04-09</td><td>6.00</td><td>0.00</td><td>0.00</td><td>6.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>20.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>20.00</strong></td></tr>
+            </table><br>
+            
+            <h2>Joshi, Parth – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>122</td><td>Joshi, Parth</td><td>2</td><td>2025-04-14</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>122</td><td>Joshi, Parth</td><td>2</td><td>2025-04-15</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>122</td><td>Joshi, Parth</td><td>2</td><td>2025-04-16</td><td>4.00</td><td>0.00</td><td>0.00</td><td>4.00</td></tr><tr><td>122</td><td>Joshi, Parth</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>20.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>20.00</strong></td></tr>
+            </table><br>
+            
+        <h2>Joshi, Parth – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Joshi, Parth</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>40.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>40.00</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Mahagaonkar, Chinmay Nilesh – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>1</td><td>2025-04-07</td><td>4.00</td><td>0.00</td><td>0.00</td><td>4.00</td></tr><tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>1</td><td>2025-04-08</td><td>4.00</td><td>0.00</td><td>0.00</td><td>4.00</td></tr><tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>1</td><td>2025-04-09</td><td>3.83</td><td>0.00</td><td>0.00</td><td>3.83</td></tr><tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>1</td><td>2025-04-10</td><td>3.98</td><td>0.00</td><td>0.00</td><td>3.98</td></tr><tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>1</td><td>2025-04-11</td><td>8.00</td><td>0.43</td><td>0.00</td><td>8.43</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>23.82</strong></td><td><strong>0.43</strong></td><td><strong>0.00</strong></td><td><strong>24.25</strong></td></tr>
+            </table><br>
+            
+            <h2>Mahagaonkar, Chinmay Nilesh – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>2</td><td>2025-04-15</td><td>4.08</td><td>0.00</td><td>0.00</td><td>4.08</td></tr><tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>2</td><td>2025-04-16</td><td>7.92</td><td>0.00</td><td>0.00</td><td>7.92</td></tr><tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>2</td><td>2025-04-17</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>103</td><td>Mahagaonkar, Chinmay Nilesh</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>20.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>20.00</strong></td></tr>
+            </table><br>
+            
+        <h2>Mahagaonkar, Chinmay Nilesh – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Mahagaonkar, Chinmay Nilesh</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>43.82</strong></td>
+            <td><strong>0.43</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>44.25</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Nguyen, Justin – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>112</td><td>Nguyen, Justin</td><td>1</td><td>2025-04-07</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>112</td><td>Nguyen, Justin</td><td>1</td><td>2025-04-08</td><td>7.97</td><td>0.00</td><td>0.00</td><td>7.97</td></tr><tr><td>112</td><td>Nguyen, Justin</td><td>1</td><td>2025-04-09</td><td>7.83</td><td>0.00</td><td>0.00</td><td>7.83</td></tr><tr><td>112</td><td>Nguyen, Justin</td><td>1</td><td>2025-04-10</td><td>7.90</td><td>0.00</td><td>0.00</td><td>7.90</td></tr><tr><td>112</td><td>Nguyen, Justin</td><td>1</td><td>2025-04-11</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>39.70</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>39.70</strong></td></tr>
+            </table><br>
+            
+            <h2>Nguyen, Justin – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>112</td><td>Nguyen, Justin</td><td>2</td><td>2025-04-14</td><td>7.97</td><td>0.00</td><td>0.00</td><td>7.97</td></tr><tr><td>112</td><td>Nguyen, Justin</td><td>2</td><td>2025-04-15</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>112</td><td>Nguyen, Justin</td><td>2</td><td>2025-04-16</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>112</td><td>Nguyen, Justin</td><td>2</td><td>2025-04-17</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>112</td><td>Nguyen, Justin</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>31.97</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>31.97</strong></td></tr>
+            </table><br>
+            
+        <h2>Nguyen, Justin – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Nguyen, Justin</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>71.67</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>71.67</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Nguyen, Phuc – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>129</td><td>Nguyen, Phuc</td><td>1</td><td>2025-04-07</td><td>4.18</td><td>0.00</td><td>0.00</td><td>4.18</td></tr><tr><td>129</td><td>Nguyen, Phuc</td><td>1</td><td>2025-04-08</td><td>3.82</td><td>0.00</td><td>0.00</td><td>3.82</td></tr><tr><td>129</td><td>Nguyen, Phuc</td><td>1</td><td>2025-04-09</td><td>4.00</td><td>0.00</td><td>0.00</td><td>4.00</td></tr><tr><td>129</td><td>Nguyen, Phuc</td><td>1</td><td>2025-04-10</td><td>4.35</td><td>0.00</td><td>0.00</td><td>4.35</td></tr><tr><td>129</td><td>Nguyen, Phuc</td><td>1</td><td>2025-04-11</td><td>3.63</td><td>0.00</td><td>0.00</td><td>3.63</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>19.98</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>19.98</strong></td></tr>
+            </table><br>
+            
+            <h2>Nguyen, Phuc – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>129</td><td>Nguyen, Phuc</td><td>2</td><td>2025-04-14</td><td>4.00</td><td>0.00</td><td>0.00</td><td>4.00</td></tr><tr><td>129</td><td>Nguyen, Phuc</td><td>2</td><td>2025-04-15</td><td>5.42</td><td>0.00</td><td>0.00</td><td>5.42</td></tr><tr><td>129</td><td>Nguyen, Phuc</td><td>2</td><td>2025-04-16</td><td>2.58</td><td>0.00</td><td>0.00</td><td>2.58</td></tr><tr><td>129</td><td>Nguyen, Phuc</td><td>2</td><td>2025-04-17</td><td>5.63</td><td>0.00</td><td>0.00</td><td>5.63</td></tr><tr><td>129</td><td>Nguyen, Phuc</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>17.63</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>17.63</strong></td></tr>
+            </table><br>
+            
+        <h2>Nguyen, Phuc – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Nguyen, Phuc</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>37.62</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>37.62</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Pham, Ryan Nam – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>130</td><td>Pham, Ryan Nam</td><td>1</td><td>2025-04-07</td><td>3.98</td><td>0.00</td><td>0.00</td><td>3.98</td></tr><tr><td>130</td><td>Pham, Ryan Nam</td><td>1</td><td>2025-04-08</td><td>4.15</td><td>0.00</td><td>0.00</td><td>4.15</td></tr><tr><td>130</td><td>Pham, Ryan Nam</td><td>1</td><td>2025-04-09</td><td>4.52</td><td>0.00</td><td>0.00</td><td>4.52</td></tr><tr><td>130</td><td>Pham, Ryan Nam</td><td>1</td><td>2025-04-10</td><td>2.88</td><td>0.00</td><td>0.00</td><td>2.88</td></tr><tr><td>130</td><td>Pham, Ryan Nam</td><td>1</td><td>2025-04-11</td><td>4.25</td><td>0.00</td><td>0.00</td><td>4.25</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>19.78</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>19.78</strong></td></tr>
+            </table><br>
+            
+            <h2>Pham, Ryan Nam – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>130</td><td>Pham, Ryan Nam</td><td>2</td><td>2025-04-14</td><td>3.98</td><td>0.00</td><td>0.00</td><td>3.98</td></tr><tr><td>130</td><td>Pham, Ryan Nam</td><td>2</td><td>2025-04-15</td><td>7.05</td><td>0.00</td><td>0.00</td><td>7.05</td></tr><tr><td>130</td><td>Pham, Ryan Nam</td><td>2</td><td>2025-04-16</td><td>4.93</td><td>0.00</td><td>0.00</td><td>4.93</td></tr><tr><td>130</td><td>Pham, Ryan Nam</td><td>2</td><td>2025-04-17</td><td>3.93</td><td>0.00</td><td>0.00</td><td>3.93</td></tr><tr><td>130</td><td>Pham, Ryan Nam</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>19.90</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>19.90</strong></td></tr>
+            </table><br>
+            
+        <h2>Pham, Ryan Nam – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Pham, Ryan Nam</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>39.68</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>39.68</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Pore, Atharva – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>136</td><td>Pore, Atharva</td><td>1</td><td>2025-04-07</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>136</td><td>Pore, Atharva</td><td>1</td><td>2025-04-08</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>136</td><td>Pore, Atharva</td><td>1</td><td>2025-04-09</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>136</td><td>Pore, Atharva</td><td>1</td><td>2025-04-10</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>136</td><td>Pore, Atharva</td><td>1</td><td>2025-04-11</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>40.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>40.00</strong></td></tr>
+            </table><br>
+            
+            <h2>Pore, Atharva – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>136</td><td>Pore, Atharva</td><td>2</td><td>2025-04-14</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>136</td><td>Pore, Atharva</td><td>2</td><td>2025-04-15</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>136</td><td>Pore, Atharva</td><td>2</td><td>2025-04-16</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>136</td><td>Pore, Atharva</td><td>2</td><td>2025-04-17</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>136</td><td>Pore, Atharva</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>32.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>32.00</strong></td></tr>
+            </table><br>
+            
+        <h2>Pore, Atharva – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Pore, Atharva</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>72.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>72.00</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Radindra, Davel – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>131</td><td>Radindra, Davel</td><td>1</td><td>2025-04-08</td><td>4.40</td><td>0.00</td><td>0.00</td><td>4.40</td></tr><tr><td>131</td><td>Radindra, Davel</td><td>1</td><td>2025-04-09</td><td>6.50</td><td>0.00</td><td>0.00</td><td>6.50</td></tr><tr><td>131</td><td>Radindra, Davel</td><td>1</td><td>2025-04-10</td><td>2.47</td><td>0.00</td><td>0.00</td><td>2.47</td></tr><tr><td>131</td><td>Radindra, Davel</td><td>1</td><td>2025-04-11</td><td>6.22</td><td>0.00</td><td>0.00</td><td>6.22</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>19.58</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>19.58</strong></td></tr>
+            </table><br>
+            
+            <h2>Radindra, Davel – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>131</td><td>Radindra, Davel</td><td>2</td><td>2025-04-14</td><td>7.15</td><td>0.00</td><td>0.00</td><td>7.15</td></tr><tr><td>131</td><td>Radindra, Davel</td><td>2</td><td>2025-04-15</td><td>4.45</td><td>0.00</td><td>0.00</td><td>4.45</td></tr><tr><td>131</td><td>Radindra, Davel</td><td>2</td><td>2025-04-16</td><td>2.52</td><td>0.00</td><td>0.00</td><td>2.52</td></tr><tr><td>131</td><td>Radindra, Davel</td><td>2</td><td>2025-04-18</td><td>5.43</td><td>0.00</td><td>0.00</td><td>5.43</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>19.55</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>19.55</strong></td></tr>
+            </table><br>
+            
+        <h2>Radindra, Davel – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Radindra, Davel</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>39.13</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>39.13</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Shah, Jash Hemant – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>137</td><td>Shah, Jash Hemant</td><td>1</td><td>2025-04-07</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>137</td><td>Shah, Jash Hemant</td><td>1</td><td>2025-04-08</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>137</td><td>Shah, Jash Hemant</td><td>1</td><td>2025-04-09</td><td>8.00</td><td>0.02</td><td>0.00</td><td>8.02</td></tr><tr><td>137</td><td>Shah, Jash Hemant</td><td>1</td><td>2025-04-10</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>137</td><td>Shah, Jash Hemant</td><td>1</td><td>2025-04-11</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>40.00</strong></td><td><strong>0.02</strong></td><td><strong>0.00</strong></td><td><strong>40.02</strong></td></tr>
+            </table><br>
+            
+            <h2>Shah, Jash Hemant – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>137</td><td>Shah, Jash Hemant</td><td>2</td><td>2025-04-16</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>137</td><td>Shah, Jash Hemant</td><td>2</td><td>2025-04-17</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>137</td><td>Shah, Jash Hemant</td><td>2</td><td>2025-04-18</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>16.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>16.00</strong></td></tr>
+            </table><br>
+            
+        <h2>Shah, Jash Hemant – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Shah, Jash Hemant</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>56.00</strong></td>
+            <td><strong>0.02</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>56.02</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Tran, Trung – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>138</td><td>Tran, Trung</td><td>1</td><td>2025-04-07</td><td>4.00</td><td>0.00</td><td>0.00</td><td>4.00</td></tr><tr><td>138</td><td>Tran, Trung</td><td>1</td><td>2025-04-08</td><td>4.23</td><td>0.00</td><td>0.00</td><td>4.23</td></tr><tr><td>138</td><td>Tran, Trung</td><td>1</td><td>2025-04-09</td><td>6.27</td><td>0.00</td><td>0.00</td><td>6.27</td></tr><tr><td>138</td><td>Tran, Trung</td><td>1</td><td>2025-04-11</td><td>5.50</td><td>0.00</td><td>0.00</td><td>5.50</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>20.00</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>20.00</strong></td></tr>
+            </table><br>
+            
+            <h2>Tran, Trung – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>138</td><td>Tran, Trung</td><td>2</td><td>2025-04-14</td><td>6.20</td><td>0.00</td><td>0.00</td><td>6.20</td></tr><tr><td>138</td><td>Tran, Trung</td><td>2</td><td>2025-04-15</td><td>5.13</td><td>0.00</td><td>0.00</td><td>5.13</td></tr><tr><td>138</td><td>Tran, Trung</td><td>2</td><td>2025-04-16</td><td>7.87</td><td>0.00</td><td>0.00</td><td>7.87</td></tr><tr><td>138</td><td>Tran, Trung</td><td>2</td><td>2025-04-18</td><td>0.78</td><td>0.00</td><td>0.00</td><td>0.78</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>19.98</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>19.98</strong></td></tr>
+            </table><br>
+            
+        <h2>Tran, Trung – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Tran, Trung</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>39.98</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>39.98</strong></td>
+          </tr>
+        </table><br>
+        
+            <h2>Vennavelli, Rajashekar Reddy – Week 1</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>1</td><td>2025-04-07</td><td>7.98</td><td>0.00</td><td>0.00</td><td>7.98</td></tr><tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>1</td><td>2025-04-08</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>1</td><td>2025-04-09</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>1</td><td>2025-04-10</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>1</td><td>2025-04-11</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>39.98</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>39.98</strong></td></tr>
+            </table><br>
+            
+            <h2>Vennavelli, Rajashekar Reddy – Week 2</h2>
+            <table>
+              <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+              <tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>2</td><td>2025-04-14</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>2</td><td>2025-04-15</td><td>7.98</td><td>0.00</td><td>0.00</td><td>7.98</td></tr><tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>2</td><td>2025-04-16</td><td>7.98</td><td>0.00</td><td>0.00</td><td>7.98</td></tr><tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>2</td><td>2025-04-17</td><td>7.98</td><td>0.00</td><td>0.00</td><td>7.98</td></tr><tr><td>119</td><td>Vennavelli, Rajashekar Reddy</td><td>2</td><td>2025-04-18</td><td>8.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td><strong></strong></td><td><strong></strong></td><td><strong></strong></td><td><strong>TOTAL:</strong></td><td><strong>39.95</strong></td><td><strong>0.00</strong></td><td><strong>0.00</strong></td><td><strong>39.95</strong></td></tr>
+            </table><br>
+            
+        <h2>Vennavelli, Rajashekar Reddy – PAYROLL TOTAL</h2>
+        <table>
+          <tr><th>Employee Number</th><th>Employee Name</th><th>Week</th><th>Date</th><th>Reg Hours</th><th>OT Hours</th><th>Sick Hours</th><th>Total Hours</th></tr>
+          <tr>
+            <td></td><td>Vennavelli, Rajashekar Reddy</td><td></td><td><strong>TOTAL:</strong></td>
+            <td><strong>79.93</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>0.00</strong></td>
+            <td><strong>79.93</strong></td>
+          </tr>
+        </table><br>
+        
+    
+    </body></html>
+    
