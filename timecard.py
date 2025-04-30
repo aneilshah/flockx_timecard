@@ -3,9 +3,13 @@ import datetime
 from html import escape
 import os
 
-INPUT_DIR = "input"
-OUTPUT_DIR = "output"
-
+EXE = False
+if EXE:
+    INPUT_DIR = os.path.join(os.getcwd(), "timecard/input")
+    OUTPUT_DIR = os.path.join(os.getcwd(), "timecard/output")
+else:
+    INPUT_DIR = os.path.join(os.getcwd(), "input")
+    OUTPUT_DIR = os.path.join(os.getcwd(), "output")
 
 def read_csv_files():
     timecard_detail_data = pd.read_csv(f"{INPUT_DIR}/approved_hours.csv", dtype=str)
@@ -291,7 +295,10 @@ def main():
     write_file(f"{OUTPUT_DIR}/report.csv", csv_report)
     write_file(f"{OUTPUT_DIR}/report.html", html_report)
 
-    print(f"TOTAL HOURS: {total}")
+    print(f"\nTOTAL HOURS:")
+    for key in total.keys():
+        if total[key] > 0:
+            print(f"{key}: {total[key]:.1f}")
 
 
 if __name__ == "__main__":
