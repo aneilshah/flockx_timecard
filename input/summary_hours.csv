@@ -1,5 +1,5 @@
 ﻿"Employee Number",Name,Manager,Regular,Overtime,Holiday,Bereavement,Holiday,"Personal Day","Sick Leave","Sick Leave (CA)",Volunteer,Voting,"Total PTO","Total Hours",Approved?
-125,"Agrawal, Swastik","Sana W.",36.67,,,,,,,,,,,36.67,Yes
+125,"Agrawal, Swastik","Sana W.",36.67,1.1,2.1,3.1,4.1,5.1,6.1,7.1,8.1,9.1,10,36.67,Yes
 139,"Basu, Samprikta","Sana W.",35.68,,,,,,,,,,,35.68,Yes
 127,"Dekhane, Aishwarya","Sana W.",73.97,,,,,,,,,,,73.97,Yes
 102,"Godse, Tanay","Sana W.",40.25,,,,,,,,,,,40.25,Yes
