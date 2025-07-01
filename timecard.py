@@ -96,8 +96,10 @@ def process_timecard_detail(df):
 
 def process_summary_hours(df):
     timecard_summary = {}
-    total = {key: 0 for key in ['hours', 'ot', 'holiday', 'bereavement', 'personal',
-                                'sick', 'sick_ca', 'vol', 'vote', 'pto', 'all_hrs']}
+    # zero out the data structure
+    summary_cols = ['hours', 'ot', 'holiday', 'pto', 'personal',
+                    'sick', 'other', 'total_pto', 'all_hrs']
+    total = {key: 0 for key in summary_cols}
 
     for row in df.to_dict('records'):
         id = row['Employee Number']
@@ -105,17 +107,23 @@ def process_summary_hours(df):
             get_float(row.get('Regular', 0)),
             get_float(row.get('Overtime', 0)),
             get_float(row.get('Holiday', 0)),
+            get_float(row.get('Paid Time Off}', 0)),
             get_float(row.get('Personal Day', 0)),
             get_float(row.get('Sick Leave', 0)) + get_float(row.get('Sick Leave (CA)', 0)),
             get_float(row.get('Bereavement', 0)) + get_float(row.get('Volunteer', 0)) + get_float(row.get('Voting', 0)),
-            get_float(row.get('Total PTO', 0))
+            get_float(row.get('Total PTO', 0)),
+            get_float(row.get('Total Hours', 0)),
         ]
+
         fields = [float(f) if pd.notna(f) and f != '' else 0 for f in fields]
         approved = row.get('Approved?', '')
-
-        keys = ['hours', 'ot', 'holiday', 'personal', 'sick', 'other', 'pto']
+        keys = summary_cols
+        print(keys)
+        print(fields)
         record = dict(zip(keys, fields))
-        record['total_hrs'] = record['hours'] + record['ot']
+        record['total_hrs'] = (record['hours'] + record['ot'] +
+            record['holiday'] + record['personal'] + record['sick'] +
+            record['other'] + record['pto'])
         record['approved'] = approved
 
         for key in total.keys():
@@ -146,13 +154,13 @@ def create_report(info, timecard_summary, timecard_detail, total, start_date, en
             emp_info.get('location', '*MISSING*'),
             f'"{emp_info.get("name", "*MISSING*")}"',
             emp_info.get('manager', '*MISSING*'),
-            f"{summary['hours']:.1f}",
+            f"{summary['hours']:.2f}",
             f"{summary['ot']:.2f}",
-            f"{summary['holiday']:.1f}",
-            f"{summary['personal']:.1f}",
-            f"{summary['sick']:.1f}",
-            f"{summary['other']:.1f}",
-            f"{summary['pto']:.1f}",
+            f"{summary['holiday']:.2f}",
+            f"{summary['personal']:.2f}",
+            f"{summary['sick']:.2f}",
+            f"{summary['other']:.2f}",
+            f"{summary['pto']:.2f}",
             f"{summary['total_hrs']:.2f}",
             summary['approved']
         ]
@@ -175,7 +183,7 @@ def create_report(info, timecard_summary, timecard_detail, total, start_date, en
 
     summary_table_html = f"""
     <h1>Timecard Report</h1>
-    <h3>Work Period: {start_date} - {end_date}</h3>
+    <h3>Hours Reported: {start_date} - {end_date}</h3>
     <table border="1" cellpadding="5">
       <tr>{''.join(f'<th>{h}</th>' for h in headers)}</tr>
       {''.join(html_rows)}

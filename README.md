@@ -6,7 +6,9 @@ Python script to generate timecard from three input files:
 * payroll_info.csv (Employee #,Hire Date,Name,Job Title,Location,Work Schedule,Employment Status,Manager)
 
 ## Generating Executable file
-
+* set internal python variable `EXE = True` (Configures the path) 
+* From terminal run:
+`pyinstaller --onefile timecard.py`
 
 ## Limitations
 In order for the python executable to find files on local computer, the directory needed to be hardcoded
@@ -26,8 +28,9 @@ To allow running an executable from unknown developer:
 
 ### Make a file executable
 * Open terminal
-* Navigate to folder
-* run `chmod +x ./timecard`
+* Navigate to folder in Finder
+* right click and choose 'New Terminal at Folder' in the bottom half of the dropdown
+* enter `chmod +x ./timecard`
 
 
 # Versions
